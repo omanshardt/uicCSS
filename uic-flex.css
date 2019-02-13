@@ -1,0 +1,144 @@
+/* uic-flex START */
+
+/* container START */
+
+.uic-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.uic-flex-column,
+.uic-flex-col {
+    flex-direction: column;
+}
+
+.uic-flex-row {
+    flex-direction: row;
+}
+
+.uic-wrap,
+.uic-flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+.uic-nowrap,
+.uic-flex-nowrap {
+    flex-wrap: nowrap !important;
+}
+
+.uic-hstart,
+.uic-flex-start,
+.uic-flex-hstart {
+    justify-content: flex-start !important;
+}
+
+.uic-hcenter,
+.uic-flex-center,
+.uic-flex-hcenter {
+    justify-content: center !important;
+}
+
+.uic-hend,
+.uic-flex-end,
+.uic-flex-hend {
+    justify-content: flex-end !important;
+}
+
+.uic-vtop,
+.uic-flex-top {
+    align-items: flex-start !important;
+}
+
+.uic-vcenter,
+.uic-flex-middle {
+    align-items: center !important;
+}
+
+.uic-vbottom,
+.uic-flex-bottom {
+    align-items: flex-end !important;
+}
+
+.uic-flex-spread,
+.uic-flex-space-between {
+    justify-content: space-between !important;
+}
+
+/* container END */
+
+/* items START */
+
+.uic-flex-fixed {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis:auto;
+}
+
+.uic-flex-space-between > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+}
+
+.uic-spacer, .uic-flex-spacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.uic-flex-fixed-spacer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+}
+
+.uic-flex-spreading-spacer {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis:auto;
+}
+
+.uic-flex-spacer-4 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+    width: 4px;
+}
+
+.uic-flex-spacer-8 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+    width: 8px;
+}
+
+.uic-flex-spacer-12 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+    width: 12px;
+}
+
+.uic-flex-spacer-20 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+    width: 20px;
+}
+
+.uic-flex-spacer-32 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:auto;
+    width: 32px;
+}
+
+.uic-flex-spread > *:not(.uic-flex-fixed):not(.uic-flex-fixed-spacer):not(.uic-flex-spreading-spacer):not(.uic-flex-spacer-4):not(.uic-flex-spacer-8):not(.uic-flex-spacer-12):not(.uic-flex-spacer-20):not(.uic-flex-spacer-32) {
+    flex: 1;
+}
+
+/* items END */
+
+/* uic-flex END */
