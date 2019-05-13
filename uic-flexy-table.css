@@ -1,0 +1,54 @@
+@media only screen and (max-width: 800px) {
+  table.uic-index-card thead {display:block; display:none;}
+  table.uic-index-card tbody {display:block;}
+  table.uic-index-card tr {
+    display:flex;
+    border-bottom:1px solid #ccc;
+    margin:0px 0px;
+    padding:12px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  table.uic-index-card td {
+    display:block;
+    border:1px solid rgba(255, 165, 0, 0.0)!important;
+    padding:0px 8px !important;
+    margin:2px 0px 2px 0;
+    justify-content:space-between;
+    flex-wrap:no-wrap;
+    flex-grow:0;
+    flex-shrink:1;
+    text-align:left !important;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  table.uic-index-card td label {
+    display:inline-block;
+    margin-bottom:0 !important;
+    text-shadow:1px 1px 0px rgba(255, 255, 255, 1);
+    border:0px solid green;
+    white-space:nowrap;
+  }
+  table.uic-index-card td label:after {
+    content:':';
+    display:inline-block;
+    padding-right:8px;
+  }
+  table.uic-index-card td span {
+    display:inline;
+    margin-bottom:0 !important;
+    border:0px solid red;
+    flex-grow:0;
+    flex-shrink:1;
+    white-space:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#888;
+  }
+  table.uic-index-card td.uic-neg span {
+    color:rgb(204, 0, 0);
+  }
+  table.uic-index-card.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color:#eee;
+  }
+}
