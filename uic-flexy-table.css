@@ -1,15 +1,31 @@
-@media only screen and (max-width: 800px) {
-  table.uic-index-card thead {display:block; display:none;}
-  table.uic-index-card tbody {display:block;}
-  table.uic-index-card tr {
+/* uic-flexy-table START */
+/**
+ * This css file enables tables to be displayed on narrow screens
+ * It renders tables with the flex display model
+ * Any tr gets the 'flex' value for the display property
+ * The table head's display value is set to 'none'
+ * These css rules work best if any td content is wrapped into a span-element that is preceded by a label
+ * indicating the property the value belongs to
+ */
+
+table.uic-flexy-table thead {
+    display:block; display:none;
+}
+
+table.uic-flexy-table tbody {
+    display:block;
+}
+
+table.uic-flexy-table tr {
     display:flex;
     border-bottom:1px solid #ccc;
     margin:0px 0px;
     padding:12px;
     flex-wrap:wrap;
     justify-content:space-between;
-  }
-  table.uic-index-card td {
+}
+
+table.uic-flexy-table td {
     display:block;
     border:1px solid rgba(255, 165, 0, 0.0)!important;
     padding:0px 8px !important;
@@ -21,34 +37,38 @@
     text-align:left !important;
     overflow:hidden;
     text-overflow:ellipsis;
-  }
-  table.uic-index-card td label {
+}
+
+table.uic-flexy-table td label {
     display:inline-block;
     margin-bottom:0 !important;
     text-shadow:1px 1px 0px rgba(255, 255, 255, 1);
-    border:0px solid green;
     white-space:nowrap;
-  }
-  table.uic-index-card td label:after {
+}
+
+table.uic-flexy-table td label:after {
     content:':';
     display:inline-block;
     padding-right:8px;
-  }
-  table.uic-index-card td span {
+}
+
+table.uic-flexy-table td span {
     display:inline;
     margin-bottom:0 !important;
-    border:0px solid red;
     flex-grow:0;
     flex-shrink:1;
     white-space:normal;
     overflow:hidden;
     text-overflow:ellipsis;
     color:#888;
-  }
-  table.uic-index-card td.uic-neg span {
-    color:rgb(204, 0, 0);
-  }
-  table.uic-index-card.table-striped > tbody > tr:nth-of-type(2n) {
-    background-color:#eee;
-  }
 }
+
+table.uic-flexy-table td.uic-neg span {
+    color:rgb(204, 0, 0);
+}
+
+table.uic-flexy-table.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color:#eee;
+}
+
+/* uic-flexy-table END */
