@@ -2,7 +2,7 @@
 
 /**
  * This css file enables tables to be displayed on narrow screens
- * Version 1.2
+ * Version 1.2.1
  * It renders tables with the flex display model
  * Any tr gets the 'flex' value for the display property
  * The table head's display value is set to 'none'
@@ -18,24 +18,23 @@ table.uic-flexy-table tbody {
     display:block;
 }
 
-table.uic-flexy-table tr {
+table.uic-flexy-table tbody tr {
     display:flex;
-    margin:0px 0px;
     padding:12px;
     flex-wrap:wrap;
     justify-content:space-between;
 }
 
-table.uic-flexy-table tr + tr {
+table.uic-flexy-table tbody tr + tr {
     border-top:1px solid #ccc;
 }
 
-table.uic-flexy-table td {
+table.uic-flexy-table tbody td {
     display:block;
     padding:0px 8px !important;
     margin:2px 0px 2px 0;
     justify-content:space-between;
-    flex-wrap:no-wrap;
+    flex-wrap:nowrap;
     flex-grow:0;
     flex-shrink:1;
     overflow:hidden;
@@ -43,32 +42,30 @@ table.uic-flexy-table td {
 }
 
 /* css for labels */
-table.uic-flexy-table td label {
+table.uic-flexy-table tbody td label {
     display:inline-block;
     margin-bottom:0 !important;
     text-shadow:1px 1px 0px rgba(255, 255, 255, 1);
     white-space:nowrap;
 }
 
-table.uic-flexy-table td label:after {
+table.uic-flexy-table tbody td label:after {
     content:':';
     display:inline-block;
     padding-right:8px;
 }
 
 /* css for content spans */
-table.uic-flexy-table td span {
+table.uic-flexy-table tbody td span {
     display:inline;
     margin-bottom:0 !important;
-    flex-grow:0;
-    flex-shrink:1;
     white-space:normal;
     overflow:hidden;
     text-overflow:ellipsis;
     color:#888;
 }
 
-table.uic-flexy-table td.uic-neg span {
+table.uic-flexy-table tbody td.uic-neg span {
     color:rgb(204, 0, 0);
 }
 

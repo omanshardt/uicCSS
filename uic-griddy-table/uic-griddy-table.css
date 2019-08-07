@@ -1,0 +1,68 @@
+/* uic-griddy-table START */
+
+/**
+ * This css file enables tables to be displayed on narrow screens
+ * Version 1.2.0
+ * It renders tables with the grid display model
+ * Any tr gets the 'grid' value for the display property
+ * The table head's display value is set to 'none'
+ * These css rules work best if any td content is wrapped into a span-element that is preceded by a label
+ * indicating the property the value belongs to
+ */
+
+table.uic-griddy-table > thead {
+    display:none;
+}
+
+table.uic-griddy-table > tbody {
+    display:block;
+}
+
+
+table.uic-griddy-table tbody tr {
+    display:grid;
+    padding:12px;
+    grid-gap:0px;
+    grid-auto-flow:column;
+}
+
+table.uic-griddy-table tbody tr + tr {
+    border-top:1px solid #ccc;
+}
+
+table.uic-griddy-table tbody td {
+    display:block;
+    padding:0px 8px !important;
+    margin:2px 0px 2px 0;
+    justify-content:space-between;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/* css for labels */
+table.uic-griddy-table tbody td label {
+    display:inline-block;
+    margin-bottom:0 !important;
+    text-shadow:1px 1px 0px rgba(255, 255, 255, 1);
+    white-space:nowrap;
+}
+
+table.uic-griddy-table tbody td label:after {
+    content:':';
+    display:inline-block;
+    padding-right:8px;
+}
+
+/* css for content spans */
+table.uic-griddy-table tbody td span {
+    display:inline;
+    margin-bottom:0 !important;
+    white-space:normal;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color:#888;
+}
+
+table.uic-griddy-table tbody td.uic-neg span {
+    color:rgb(204, 0, 0);
+}

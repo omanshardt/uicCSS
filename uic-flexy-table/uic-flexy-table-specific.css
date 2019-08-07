@@ -1,0 +1,20 @@
+.uic-flexy-table td {
+/*     background:yellow; */
+        font-size:88%;
+}
+
+.uic-flexy-table td:nth-child(1) {
+    width:100%;
+}
+.uic-flexy-table td:nth-child(2) {
+    width:50%;
+}
+.uic-flexy-table td:nth-child(3) {
+    width:50%;
+}
+.uic-flexy-table td:nth-child(4) {
+    width:50%;
+}
+.uic-flexy-table td:nth-child(5) {
+    width:50%;
+}
