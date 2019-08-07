@@ -1,6 +1,8 @@
 /* uic-flexy-table START */
+
 /**
  * This css file enables tables to be displayed on narrow screens
+ * Version 1.2
  * It renders tables with the flex display model
  * Any tr gets the 'flex' value for the display property
  * The table head's display value is set to 'none'
@@ -18,27 +20,29 @@ table.uic-flexy-table tbody {
 
 table.uic-flexy-table tr {
     display:flex;
-    border-bottom:1px solid #ccc;
     margin:0px 0px;
     padding:12px;
     flex-wrap:wrap;
     justify-content:space-between;
 }
 
+table.uic-flexy-table tr + tr {
+    border-top:1px solid #ccc;
+}
+
 table.uic-flexy-table td {
     display:block;
-    border:1px solid rgba(255, 165, 0, 0.0)!important;
     padding:0px 8px !important;
     margin:2px 0px 2px 0;
     justify-content:space-between;
     flex-wrap:no-wrap;
     flex-grow:0;
     flex-shrink:1;
-    text-align:left !important;
     overflow:hidden;
     text-overflow:ellipsis;
 }
 
+/* css for labels */
 table.uic-flexy-table td label {
     display:inline-block;
     margin-bottom:0 !important;
@@ -52,6 +56,7 @@ table.uic-flexy-table td label:after {
     padding-right:8px;
 }
 
+/* css for content spans */
 table.uic-flexy-table td span {
     display:inline;
     margin-bottom:0 !important;
@@ -65,10 +70,6 @@ table.uic-flexy-table td span {
 
 table.uic-flexy-table td.uic-neg span {
     color:rgb(204, 0, 0);
-}
-
-table.uic-flexy-table.table-striped > tbody > tr:nth-of-type(2n) {
-    background-color:#eee;
 }
 
 /* uic-flexy-table END */
